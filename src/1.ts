@@ -1,6 +1,7 @@
 // 1. Создать функцию которая принимает число и считает факториал этого числа.
 function factorial(n: number): number {
-    if (!Number.isInteger(n)) throw new Error("Число n должно быть целым.");
+    if (!Number.isInteger(n))
+        throw new Error("Число n должно быть целым.");
     
     let res: number = 1;
     while (n) {
